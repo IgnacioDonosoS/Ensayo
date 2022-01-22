@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BikeStore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="p-5 bg-light">
+            <h1 class="display-3">Monitor de inventario</h1>
+        </div>
+
+        <div class="container row">
+
+            <div class="mb-3 col-3">
+                <label for="" class="form-label"></label>
+                <select class="form-control" name="" id="selectTienda">
+                    <option value="0">Elija una tienda</option>
+                </select>
+            </div>
+            <div class="mb-3 col-3">
+                <label for="" class="form-label"></label>
+                <select class="form-control" name="" id="selectMarca">
+                    <option value="0">Elija una marca</option>
+                </select>
+            </div>
+            <div class="mb-3 col-3">
+                <label for="" class="form-label"></label>
+                <select class="form-control" name="" id="selectCategoria">
+                    <option value="0">Elija una categoría</option>
+                </select>
+            </div>
+            <div class="col-3 text-center pt-4">
+                <button type="button" id="filtrar" class="btn btn-primary">Filtrar</button>
+            </div>
+        </div>
+
+        <div class="pt-5 container" id=""></div>
+        <table class="table table-striped table-responsive">
+            <thead class="thead-default">
+                <tr>
+                    <th>Tienda</th>
+                    <th>Id Producto</th>
+                    <th>Nombre Producto</th>
+                    <th>Inventario</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js"
+        integrity="sha512-/Q6t3CASm04EliI1QyIDAA/nDo9R8FQ/BULoUFyN4n/BDdyIxeH7u++Z+eobdmr11gG5D/6nPFyDlnisDwhpYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

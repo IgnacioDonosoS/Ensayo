@@ -1,0 +1,1 @@
+select brand_id, brand_name, sum(s.quantity) from brands b join products p using(brand_id) join stocks s using(product_id) group by brand_id, brand_name order by sum desc;
